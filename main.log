@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7300 64-bit) (preloaded format=pdflatex 2020.2.14)  22 JUL 2020 14:35
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7300 64-bit) (preloaded format=pdflatex 2020.2.14)  22 JUL 2020 14:54
 entering extended mode
 **./main.tex
 (main.tex
@@ -1259,11 +1259,16 @@ LaTeX Font Warning: Font shape `OMX/cmex/m/n' in size <17.86> not available
 LaTeX Font Warning: Font shape `OMX/cmex/m/n' in size <12.50194> not available
 (Font)              size <12> substituted on input line 76.
 
-<head.png, id=12, 100.6962pt x 100.2144pt>
-File: head.png Graphic file (type png)
-<use head.png>
-Package pdftex.def Info: head.png  used on input line 76.
-(pdftex.def)             Requested size: 100.69594pt x 100.21414pt.
+<logofin.png, id=12, 384.9582pt x 160.6803pt>
+File: logofin.png Graphic file (type png)
+<use logofin.png>
+Package pdftex.def Info: logofin.png  used on input line 76.
+(pdftex.def)             Requested size: 693.7814pt x 289.59453pt.
+
+Overfull \hbox (29.02132pt too wide) in paragraph at lines 76--76
+[][]  
+ []
+
 LaTeX Font Info:    Trying to load font information for T1+lmr on input line 23
 6.
 ("C:\Users\51926\AppData\Local\Programs\MiKTeX 2.9\tex/latex/lm\t1lmr.fd"
@@ -1301,13 +1306,18 @@ File: placeholder.jpg Graphic file (type jpg)
 Package pdftex.def Info: placeholder.jpg  used on input line 236.
 (pdftex.def)             Requested size: 832.56203pt x 459.17639pt.
 (main.bbl)
-Overfull \vbox (59.7599pt too high) detected at line 236
+Overfull \vbox (22.10771pt too high) detected at line 236
  []
 
-File: head.png Graphic file (type png)
-<use head.png>
-Package pdftex.def Info: head.png  used on input line 236.
-(pdftex.def)             Requested size: 100.69594pt x 100.21414pt.
+File: logofin.png Graphic file (type png)
+<use logofin.png>
+Package pdftex.def Info: logofin.png  used on input line 236.
+(pdftex.def)             Requested size: 693.7814pt x 289.59453pt.
+
+Overfull \hbox (29.02132pt too wide) has occurred while \output is active
+[][]  
+ []
+
 
 Overfull \hbox (88.20334pt too wide) has occurred while \output is active
 []
@@ -1315,7 +1325,7 @@ Overfull \hbox (88.20334pt too wide) has occurred while \output is active
 
 [1{C:/Users/51926/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}
 
- <./head.png> <./placeholder.jpg>]
+ <./logofin.png> <./placeholder.jpg>]
 \tf@nav=\write6
 \openout6 = `main.nav'.
 
@@ -1340,12 +1350,12 @@ LaTeX Font Warning: Size substitutions with differences
  ) 
 Here is how much of TeX's memory you used:
  23127 strings out of 481527
- 461065 string characters out of 2912390
- 746835 words of memory out of 3000000
+ 461086 string characters out of 2912390
+ 746810 words of memory out of 3000000
  37784 multiletter control sequences out of 15000+200000
  626248 words of font info for 106 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 60i,20n,78p,773b,1248s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 60i,18n,78p,773b,1248s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Users/51926/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/lm-mathi
 t.enc}{C:/Users/51926/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/lm-e
 c.enc}{C:/Users/51926/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/lm-m
@@ -1358,7 +1368,7 @@ pe1/public/lm/lmri12.pfb><C:/Users/51926/AppData/Local/Programs/MiKTeX 2.9/font
 s/type1/public/lm/lmss17.pfb><C:/Users/51926/AppData/Local/Programs/MiKTeX 2.9/
 fonts/type1/public/lm/lmssbx10.pfb><C:/Users/51926/AppData/Local/Programs/MiKTe
 X 2.9/fonts/type1/public/lm/lmsy10.pfb>
-Output written on main.pdf (1 page, 172771 bytes).
+Output written on main.pdf (1 page, 198640 bytes).
 PDF statistics:
  69 PDF objects out of 1000 (max. 8388607)
  7 named destinations out of 1000 (max. 500000)
