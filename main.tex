@@ -63,10 +63,10 @@
 %	TITLE SECTION 
 %----------------------------------------------------------------------------------------
 
-\title{Unnecessarily Complicated Research Title} % Poster title
+\title{Prediction of fund raising state of technology projects in Kickstarter using Machine Learning models} % Poster title
 
 
-\author{X Y$^{1}$ , Marks Calderon$^{1}$} % Author(s)
+\author{Alonso Puente$^{1}$ , Marks Calderon$^{1}$} % Author(s)
 \institute{$^{1}$ESAN University} % Institution(s)
 
 
@@ -92,28 +92,22 @@
 
 
 \begin{block}{Motivation}
-	Lorem ipsum dolor \textbf{sit amet}, consectetur adipiscing elit. Sed commodo molestie porta. Sed ultrices scelerisque sapien ac commodo. Donec ut volutpat elit. Sed laoreet accumsan mattis. Integer sapien tellus, auctor ac blandit eget, sollicitudin vitae lorem. Praesent dictum tempor pulvinar. Suspendisse potenti. Sed tincidunt varius ipsum,
+Only \textbf{20\%} of Kickstarter technology projects were successful. It means this category has one of the lowest success rate.
 	\begin{figure}
-		\includegraphics[width=0.8\linewidth]{placeholder.jpg}
-		\caption{Figure caption}
+		\includegraphics[width=0.5\linewidth]{kickstarter_success_rate_2009_2019.jpg}
+		\caption{Kickstarter success rate, from 2009 to 2019}
 	\end{figure}
 
-Lorem ipsum dolor sit amet, consectetur, nunc tellus pulvinar tortor, commodo eleifend risus arcu sed odio:
-\begin{itemize}
-	\item Mollis dignissim, magna augue tincidunt dolor, interdum vestibulum urna
-\end{itemize}
+In addition to this, previous researches were just focused on metadata variables, such as funding goal, number of backers, pledges, campaign duration, etc.
 %------------------------------------------------
 
 \end{block}
 
 \begin{block}{Dataset and Features}
-	
-	 et porta nulla suscipit et. Etiam congue bibendum felis, ac dictum augue cursus a. \textbf{Donec} magna eros, iaculis sit amet placerat quis, laoreet id est. In ut orci purus, interdum ornare nibh. Pellentesque pulvinar, nibh ac malesuada accumsan, urna nunc convallis tortor, ac vehicula nulla tellus eget nulla. Nullam lectus tortor, \textit{consequat tempor hendrerit} quis, vestibulum in diam. Maecenas sed diam augue.
-	
-	This statement requires citation \cite{Smith:2012qr}.
-		\begin{figure}
-		\includegraphics[width=0.8\linewidth]{placeholder.jpg}
-		\caption{Figure caption2}
+	We scraped \textbf{27,035} technology projects from Kickstarter, between 2009 and 2019. Those projects contained metadata (backers, goal, pledge and duration), visual content (project image) and textual content (project description).
+	\begin{figure}
+		\includegraphics[width=0.75\linewidth]{scraped_projects.jpg}
+		\caption{Success rate from Kickstarter's technology scraped projects.}
 	\end{figure}
 	
 \end{block}
@@ -128,49 +122,29 @@ Lorem ipsum dolor sit amet, consectetur, nunc tellus pulvinar tortor, commodo el
 
 \begin{column}{\onecolwid} % The first column within column 2 (column 2.1)
 	\begin{block}{Methods}
+	Metadata start datasets were downloaded from WebRobots.io. Once the files were decompressed, they were pre-processed through \textbf{Alteryx Designer} software to build final datasets.
 		
-		The following materials were required to complete the research:
+		\begin{figure}
+			\includegraphics[width=0.8\linewidth]{metadata.jpg}
+			\caption{Metadata variables scraped from Kickstarter}
+		\end{figure}
+	With projects URLs, project images and descriptions were scraped using Python libraries such as \textbf{Beautiful Soup} and \textbf{tqdm}.
+	
+	A framework based on the assembly of three predictive models for each part of the project was built:
 		
 		\begin{itemize}
-			\item Curabitur pellentesque dignissim
-			\item Eu facilisis est tempus quis
-			\item Duis porta consequat lorem
-			\item Eu facilisis est tempus quis
+			\item An \textbf{SVM} model for Metadata.
+			\item A \textbf{Convolutional Neural Network (CNN)} for visual content.
+			\item Two \textbf{SVM} models, the first one with \textbf{TF-IDF} and the second one with \textbf{BoW}.
 		\end{itemize}
 		
-		The materials were prepared according to the steps outlined below:
-		
-		
-		This statement requires citation \cite{Smith:2012qr}.
 		\begin{figure}
-			\includegraphics[width=0.8\linewidth]{placeholder.jpg}
-			\caption{Figure caption2}
+			\includegraphics[width=0.95\linewidth]{prototipo.jpg}
+			\caption{Proposed framework.}
 		\end{figure}
 		
 	\end{block}
-	
 
-%----------------------------------------------------------------------------------------
-%	MATHEMATICAL SECTION
-%----------------------------------------------------------------------------------------
-
-\begin{block}{SVM base line}
-
-Nam quis odio enim, in molestie libero. Vivamus cursus mi at nulla elementum sollicitudin. Nam quis odio enim, in molestie libero. Vivamus cursus mi at nulla elementum sollicitudin.
-  
-\begin{equation}
-E = mc^{2}
-\label{eqn:Einstein}
-\end{equation}
-
-Nam quis odio enim, in molestie libero. Vivamus cursus mi at nulla elementum sollicitudin. Nam quis odio enim, in molestie libero. Vivamus cursus mi at nulla elementum sollicitudin.
-
-\begin{equation}
-\cos^3 \theta =\frac{1}{4}\cos\theta+\frac{3}{4}\cos 3\theta
-\label{eq:refname}
-\end{equation}
-
-\end{block}
 
 %----------------------------------------------------------------------------------------
 
@@ -186,31 +160,24 @@ Nam quis odio enim, in molestie libero. Vivamus cursus mi at nulla elementum sol
 \begin{column}{\onecolwid} % The third column
 	\begin{block}{Results and Discussion}
 		
+		According to selected evaluation metrics, each model obtained the following results after training stage:
+		
 		\begin{figure}
-			\includegraphics[width=0.8\linewidth]{placeholder.jpg}
-			\caption{Figure caption}
+			\includegraphics[width=0.8\linewidth]{resultados.png}
+			\caption{Data training results.}
 		\end{figure}
 		
-		Nunc tempus venenatis facilisis. Curabitur suscipit consequat eros non porttitor. Sed a massa dolor, id ornare enim:
+		Then, a demo was built in order to test metadata, images and description examples as inputs.
 		
-		\begin{table}
-			\vspace{2ex}
-			\begin{tabular}{l l l}
-				\toprule
-				\textbf{Treatments} & \textbf{Response 1} & \textbf{Response 2}\\
-				\midrule
-				Treatment 1 & 0.0003262 & 0.562 \\
-				Treatment 2 & 0.0015681 & 0.910 \\
-				Treatment 3 & 0.0009271 & 0.296 \\
-				\bottomrule
-			\end{tabular}
-			\caption{Table caption}
-		\end{table}
+		\begin{figure}
+			\includegraphics[width=0.8\linewidth]{demo.jpg}
+			\caption{Demo results.}
+		\end{figure}
 		
 	\end{block}
 	\begin{block}{Conclusion and Discussion}
 		
-		Nunc tempus venenatis facilisis. \textbf{Curabitur suscipit} consequat eros non porttitor. Sed a massa dolor, id ornare enim. Fusce quis massa dictum tortor \textbf{tincidunt mattis}. Donec quam est, lobortis quis pretium at, laoreet scelerisque lacus. Nam quis odio enim, in molestie libero. Vivamus cursus mi at \textit{nulla elementum sollicitudin}.
+		After analyzing the models proposed for each part of the project, it was concluded that only the models for metadata and descriptions are acceptable to be used since the image model does not help to predict correctly due to falling into overfitting.
 	\end{block}
 	
 	

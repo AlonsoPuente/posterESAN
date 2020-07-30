@@ -1,3 +1,5 @@
-This is BibTeX, Version 0.99dThe top-level auxiliary file: main.aux
-The style file: unsrt.bst
-Database file #1: sample.bib
+[0] Config.pm:304> INFO - This is Biber 2.14
+[0] Config.pm:307> INFO - Logfile is 'main.blg'
+[119] biber-MSWIN64:322> INFO - === 
+[570] Utils.pm:320> ERROR - Cannot find 'main.bcf'!
+[570] Biber.pm:132> INFO - ERRORS: 1
