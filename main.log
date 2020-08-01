@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7440 64-bit) (preloaded format=pdflatex 2020.6.20)  1 AUG 2020 11:49
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7440 64-bit) (preloaded format=pdflatex 2020.6.20)  1 AUG 2020 16:42
 entering extended mode
 **./main.tex
 (main.tex
@@ -1176,11 +1176,11 @@ LaTeX Font Warning: Font shape `OMX/cmex/m/n' in size <25.92088> not available
 LaTeX Font Warning: Font shape `OMX/cmex/m/n' in size <18.515> not available
 (Font)              size <17.28> substituted on input line 202.
 
-<prototipo.jpg, id=19, 930.8376pt x 534.3162pt>
+<prototipo.jpg, id=19, 762.6894pt x 436.9926pt>
 File: prototipo.jpg Graphic file (type jpg)
 <use prototipo.jpg>
 Package pdftex.def Info: prototipo.jpg  used on input line 202.
-(pdftex.def)             Requested size: 988.66046pt x 567.51389pt.
+(pdftex.def)             Requested size: 988.66046pt x 566.46332pt.
 <resultados.png, id=20, 758.08218pt x 246.1697pt>
 File: resultados.png Graphic file (type png)
 <use resultados.png>
@@ -1248,7 +1248,7 @@ iles/MiKTeX 2.9/fonts/type1/public/lm/lmri12.pfb><C:/Program Files/MiKTeX 2.9/f
 onts/type1/public/lm/lmss17.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public
 /lm/lmssbx10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmsy10.pfb>
 
-Output written on main.pdf (1 page, 1023766 bytes).
+Output written on main.pdf (1 page, 930674 bytes).
 PDF statistics:
  67 PDF objects out of 1000 (max. 8388607)
  7 named destinations out of 1000 (max. 500000)
