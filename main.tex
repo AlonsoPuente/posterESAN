@@ -30,8 +30,8 @@
 
 \setbeamercolor{block title}{fg=nred,bg=white} % Colors of the block titles
 \setbeamercolor{block body}{fg=black,bg=white} % Colors of the body of blocks
-\setbeamercolor{block alerted title}{fg=white,bg=dred!70} % Colors of the highlighted block titles
-\setbeamercolor{block alerted body}{fg=black,bg=dred!10} % Colors of the body of highlighted blocks
+\setbeamercolor{block alerted title}{fg=white,bg=nred!70} % Colors of the highlighted block titles
+\setbeamercolor{block alerted body}{fg=black,bg=nred!10} % Colors of the body of highlighted blocks
 % Many more colors are available for use in beamerthemeconfposter.sty
 
 %-----------------------------------------------------------
@@ -49,10 +49,10 @@
 \setlength{\paperwidth}{48in} % A0 width: 46.8in
 \setlength{\paperheight}{36in} % A0 height: 33.1in
 \setlength{\sepwid}{0.024\paperwidth} % Separation width (white space) between columns
-\setlength{\onecolwid}{0.3\paperwidth} % Width of one column
-\setlength{\twocolwid}{0.464\paperwidth} % Width of two columns
+\setlength{\onecolwid}{0.28\paperwidth} % Width of one column
+\setlength{\twocolwid}{0.48\paperwidth} % Width of two columns
 \setlength{\threecolwid}{0.708\paperwidth} % Width of three columns
-\setlength{\topmargin}{-0.5in} % Reduce the top margin size
+\setlength{\topmargin}{-0.95in} % Reduce the top margin size
 %-----------------------------------------------------------
 
 \usepackage{graphicx}  % Required for including images
@@ -75,17 +75,17 @@
 
 \begin{document}
 
-\addtobeamertemplate{block end}{}{\vspace*{2ex}} % White space under blocks
+\addtobeamertemplate{block end}{}{\vspace*{1ex}} % White space under blocks
 \addtobeamertemplate{block alerted end}{}{\vspace*{2ex}} % White space under highlighted (alert) blocks
 
-\setlength{\belowcaptionskip}{2ex} % White space under figures
-\setlength\belowdisplayshortskip{2ex} % White space under equations
+\setlength{\belowcaptionskip}{1ex} % White space under figures
+\setlength\belowdisplayshortskip{1ex} % White space under equations
 
 \begin{frame}[t] % The whole poster is enclosed in one beamer frame
 
 \begin{columns}[t] % The whole poster consists of three major columns, the second of which is split into two columns twice - the [t] option aligns each column's content to the top
 
-\begin{column}{\sepwid}\end{column} % Empty spacer column
+%\begin{column}{\sepwid}\end{column} % Empty spacer column
 
 \begin{column}{\onecolwid} % The first column
 
@@ -94,7 +94,7 @@
 \begin{block}{Motivation}
 More than 5 billions U.S. dollars pledged on Kickstarter projects. They had a \textbf{37.86\%} success rate. Also, Technology campaigns had only a \textbf{20\%} success rate in average since 2009. 
 	\begin{figure}
-		\includegraphics[width=0.5\linewidth]{kickstarter_success_rate_2009_2019.jpg}
+		\includegraphics[width=0.6\linewidth]{kickstarter_success_rate_2009_2019.jpg}
 		\caption{Kickstarter success rate, from 2009 to 2019}
 	\end{figure}
 
@@ -104,11 +104,11 @@ Machine Learning models are essential to predict campaign success and reduce unc
 \end{block}
 
 \begin{block}{Dataset and Features}
-		\textbf{27,035} Kickstarter technology projects were obtained from January 2009 until August 2019. The features selected were metadata (backers, goal, pledge and duration), visual content (project image), and textual content (project description).
+		\textbf{27,035} Kickstarter technology projects were obtained from January 2009 until August 2019. The features selected were metadata (backers, goal, pledge and duration), visual content (project image), and textual content (project description). The pre=processing metadata used  \textbf{Alteryx Designer} software. the image and textual datasets were scraped from Kickstarter site.
 	\begin{figure}
-		\includegraphics[width=0.75\linewidth]{scraped_projects.jpg}
-		\caption{Success rate from Kickstarter's technology scraped projects.}
-	\end{figure}
+			\includegraphics[width=0.8\linewidth]{metadata.jpg}
+			\caption{Metadata variables scraped from Kickstarter}
+		\end{figure}
 	
 \end{block}
 
@@ -116,39 +116,121 @@ Machine Learning models are essential to predict campaign success and reduce unc
 
 \end{column} % End of the first column
 
-\begin{column}{\sepwid}\end{column} % Empty spacer column
+%\begin{column}{\sepwid}\end{column} % Empty spacer column
 
 
 
-\begin{column}{\onecolwid} % The first column within column 2 (column 2.1)
-	\begin{block}{Methods}
-	Metadata start datasets were downloaded from WebRobots.io. Once the files were decompressed, they were pre-processed through \textbf{Alteryx Designer} software to build final datasets.
-		
-		\begin{figure}
-			\includegraphics[width=0.8\linewidth]{metadata.jpg}
-			\caption{Metadata variables scraped from Kickstarter}
-		\end{figure}
-	With projects URLs, project images and descriptions were scraped using Python libraries such as \textbf{Beautiful Soup} and \textbf{tqdm}.
+\begin{column}{\twocolwid} % Begin a column which is two columns wide (column 2)
 	
-	A framework based on the assembly of three predictive models for each part of the project was built:
-		
-		\begin{itemize}
-			\item An \textbf{SVM} model for Metadata.
-			\item A \textbf{Convolutional Neural Network (CNN)} for visual content.
-			\item Two \textbf{SVM} models, the first one with \textbf{TF-IDF} and the second one with \textbf{BoW}.
-		\end{itemize}
-		
+			%----------------------------------------------------------------------------------------
+	%	IMPORTANT RESULT
+	%----------------------------------------------------------------------------------------
+	
+
 		\begin{figure}
-			\includegraphics[width=0.95\linewidth]{prototipo.jpg}
+			\hspace*{3in}
+			\includegraphics[width=0.97\linewidth]{prototipo.jpg}
 			\caption{Proposed framework.}
+			\label{figfram}
+			\hspace*{-3in}
 		\end{figure}
+
 		
-	\end{block}
+		\begin{columns}[t,totalwidth=\twocolwid] % Split up the two columns wide column
+		
+		
+		\begin{column}{\onecolwid}\vspace{-.6in} % The first column within column 2 (column 2.1)
+			
+			%----------------------------------------------------------------------------------------
+			%	MATERIALS
+			%----------------------------------------------------------------------------------------
+			
+			\begin{block}{Methods}
+				
+					A framework based on the assembly of three predictive models (Fig, \ref{figfram}) for each part of the project was built:
+					\begin{itemize}
+						\item An \textbf{SVM} model for Metadata.
+						\item A \textbf{Convolutional Neural Network (CNN)} for visual content.
+						\item Two \textbf{SVM} models, the first one with \textbf{TF-IDF} and one with \textbf{BoW}.
+					\end{itemize}
+				
+			\end{block}
+			
+			%----------------------------------------------------------------------------------------
+			
+		\end{column} % End of column 2.1
+		\begin{column}{\sepwid}\end{column}
+		
+		\begin{column}{\onecolwid}\vspace{-0.6in} % The second column within column 2 (column 2.2)
+			
+			%----------------------------------------------------------------------------------------
+			%	METHODS
+			%----------------------------------------------------------------------------------------
+			
+		\begin{block}{Conclusion and Discussion}
+			
+			We concluded that only the models for metadata and descriptions are acceptable. Image model was a lower result because each project has different images to train, and VGG learned per each project differents patterns. It implies overfitting over our visual model.
+		\end{block}
+			
+			%----------------------------------------------------------------------------------------
+			
+		\end{column} % End of column 2.2
+		
+	\end{columns} % End of the split of column 2 - any content after this will now take up 2 columns width
+	
+	
+	
+	%----------------------------------------------------------------------------------------
+	
+	\begin{columns}[t,totalwidth=\twocolwid] % Split up the two columns wide column again
+		%\begin{column}{\sepwid}\end{column}
+		
+		\begin{column}{\onecolwid}\vspace{-.6in} % The first column within column 2 (column 2.1)
+			
+			%----------------------------------------------------------------------------------------
+			%	MATHEMATICAL SECTION
+			%----------------------------------------------------------------------------------------
+			
+			\begin{block}{Results and Discussion}
+				
+			 We split the data with 80\% for training set and 20\% for test. And the modelos got	the following results :
+				
+			
+				\begin{figure}
+					\includegraphics[width=0.8\linewidth]{resultados.png}
+					\caption{Data test results.}
+				\end{figure}
+				
+				
+			\end{block}
+			
+			%----------------------------------------------------------------------------------------
+			
+		\end{column} % End of column 2.1
+	\begin{column}{\sepwid}\end{column}
+		
+		\begin{column}{\onecolwid}\vspace{-.6in} % The second column within column 2 (column 2.2)
+			
+			%----------------------------------------------------------------------------------------
+			%	References
+			%----------------------------------------------------------------------------------------
+			
+			\begin{block}{References}
+			
+			\nocite{*} % Insert publications even if they are not cited in the poster
+			\footnotesize{\bibliographystyle{plain}\bibliography{sample}}
+			
+			\end{block}
+		
+			
+			%----------------------------------------------------------------------------------------
+			
+		\end{column} % End of column 2.2
+		
+	\end{columns} % End of the split of column 2
+	
 
-
-%----------------------------------------------------------------------------------------
-
-\end{column} % End of column 2.1
+\end{column} % End of the second column
 
 
 
@@ -157,45 +239,7 @@ Machine Learning models are essential to predict campaign success and reduce unc
 
 \begin{column}{\sepwid}\end{column} % Empty spacer column
 
-\begin{column}{\onecolwid} % The third column
-	\begin{block}{Results and Discussion}
-		
-		According to selected evaluation metrics, each model obtained the following results after training stage:
-		
-		\begin{figure}
-			\includegraphics[width=0.8\linewidth]{resultados.png}
-			\caption{Data training results.}
-		\end{figure}
-		
-		Then, a demo was built in order to test metadata, images and description examples as inputs.
-		
-		\begin{figure}
-			\includegraphics[width=0.8\linewidth]{demo.jpg}
-			\caption{Demo results.}
-		\end{figure}
-		
-	\end{block}
-	\begin{block}{Conclusion and Discussion}
-		
-		After analyzing the models proposed for each part of the project, it was concluded that only the models for metadata and descriptions are acceptable to be used since the image model does not help to predict correctly due to falling into overfitting.
-	\end{block}
-	
-	
-	%----------------------------------------------------------------------------------------
-	%	REFERENCES
-	%----------------------------------------------------------------------------------------
-	
-	\begin{block}{References}
-		
-		\nocite{*} % Insert publications even if they are not cited in the poster
-		\footnotesize{\bibliographystyle{plain}\bibliography{sample}}
-		
-	\end{block}
 
-
-%----------------------------------------------------------------------------------------
-
-\end{column} % End of the third column
 
 \end{columns} % End of all the columns in the poster
 
