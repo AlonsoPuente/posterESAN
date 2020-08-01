@@ -63,7 +63,7 @@
 %	TITLE SECTION 
 %----------------------------------------------------------------------------------------
 
-\title{Prediction of fund raising state of technology projects in Kickstarter using Machine Learning models} % Poster title
+\title{Using Machine Learning models to Predict Kickstarter success for Technology Projects} % Poster title
 
 
 \author{Alonso Puente$^{1}$ , Marks Calderon$^{1}$} % Author(s)
@@ -92,19 +92,19 @@
 
 
 \begin{block}{Motivation}
-Only \textbf{20\%} of Kickstarter technology projects were successful. It means this category has one of the lowest success rate.
+More than 5 billions U.S. dollars pledged on Kickstarter projects. They had a \textbf{37.86\%} success rate. Also, Technology campaigns had only a \textbf{20\%} success rate in average since 2009. 
 	\begin{figure}
 		\includegraphics[width=0.5\linewidth]{kickstarter_success_rate_2009_2019.jpg}
 		\caption{Kickstarter success rate, from 2009 to 2019}
 	\end{figure}
 
-In addition to this, previous researches were just focused on metadata variables, such as funding goal, number of backers, pledges, campaign duration, etc.
+Machine Learning models are essential to predict campaign success and reduce uncertainty.
 %------------------------------------------------
 
 \end{block}
 
 \begin{block}{Dataset and Features}
-	We scraped \textbf{27,035} technology projects from Kickstarter, between 2009 and 2019. Those projects contained metadata (backers, goal, pledge and duration), visual content (project image) and textual content (project description).
+		\textbf{27,035} Kickstarter technology projects were obtained from January 2009 until August 2019. The features selected were metadata (backers, goal, pledge and duration), visual content (project image), and textual content (project description).
 	\begin{figure}
 		\includegraphics[width=0.75\linewidth]{scraped_projects.jpg}
 		\caption{Success rate from Kickstarter's technology scraped projects.}
@@ -188,8 +188,7 @@ In addition to this, previous researches were just focused on metadata variables
 	\begin{block}{References}
 		
 		\nocite{*} % Insert publications even if they are not cited in the poster
-		\small{\bibliographystyle{unsrt}
-			\bibliography{sample}\vspace{0.75in}}
+		\footnotesize{\bibliographystyle{plain}\bibliography{sample}}
 		
 	\end{block}
 

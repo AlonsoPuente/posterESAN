@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7440 64-bit) (preloaded format=pdflatex 2020.6.20)  30 JUL 2020 01:04
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7440 64-bit) (preloaded format=pdflatex 2020.6.20)  1 AUG 2020 11:49
 entering extended mode
 **./main.tex
 (main.tex
@@ -1142,7 +1142,7 @@ Overfull \hbox (29.02132pt too wide) in paragraph at lines 76--76
  []
 
 LaTeX Font Info:    Trying to load font information for T1+lmr on input line 20
-3.
+2.
 ("C:\Program Files\MiKTeX 2.9\tex/latex/lm\t1lmr.fd"
 File: t1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
@@ -1150,51 +1150,51 @@ File: t1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 File: kickstarter_success_rate_2009_2019.jpg Graphic file (type jpg)
 <use kickstarter_success_rate_2009_2019.jpg>
 Package pdftex.def Info: kickstarter_success_rate_2009_2019.jpg  used on input 
-line 203.
+line 202.
 (pdftex.def)             Requested size: 520.34929pt x 518.66225pt.
 <scraped_projects.jpg, id=17, 593.21625pt x 429.85594pt>
 File: scraped_projects.jpg Graphic file (type jpg)
 <use scraped_projects.jpg>
-Package pdftex.def Info: scraped_projects.jpg  used on input line 203.
+Package pdftex.def Info: scraped_projects.jpg  used on input line 202.
 (pdftex.def)             Requested size: 780.52393pt x 565.60785pt.
 <metadata.jpg, id=18, 896.59969pt x 539.76656pt>
 File: metadata.jpg Graphic file (type jpg)
 <use metadata.jpg>
-Package pdftex.def Info: metadata.jpg  used on input line 203.
+Package pdftex.def Info: metadata.jpg  used on input line 202.
 (pdftex.def)             Requested size: 832.56203pt x 501.22823pt.
-LaTeX Font Info:    Calculating math sizes for size <37.03> on input line 203.
+LaTeX Font Info:    Calculating math sizes for size <37.03> on input line 202.
 
 
 LaTeX Font Warning: Font shape `OMX/cmex/m/n' in size <37.03> not available
-(Font)              size <24.88> substituted on input line 203.
+(Font)              size <24.88> substituted on input line 202.
 
 
 LaTeX Font Warning: Font shape `OMX/cmex/m/n' in size <25.92088> not available
-(Font)              size <24.88> substituted on input line 203.
+(Font)              size <24.88> substituted on input line 202.
 
 
 LaTeX Font Warning: Font shape `OMX/cmex/m/n' in size <18.515> not available
-(Font)              size <17.28> substituted on input line 203.
+(Font)              size <17.28> substituted on input line 202.
 
 <prototipo.jpg, id=19, 930.8376pt x 534.3162pt>
 File: prototipo.jpg Graphic file (type jpg)
 <use prototipo.jpg>
-Package pdftex.def Info: prototipo.jpg  used on input line 203.
+Package pdftex.def Info: prototipo.jpg  used on input line 202.
 (pdftex.def)             Requested size: 988.66046pt x 567.51389pt.
 <resultados.png, id=20, 758.08218pt x 246.1697pt>
 File: resultados.png Graphic file (type png)
 <use resultados.png>
-Package pdftex.def Info: resultados.png  used on input line 203.
+Package pdftex.def Info: resultados.png  used on input line 202.
 (pdftex.def)             Requested size: 832.56203pt x 270.35927pt.
 <demo.jpg, id=21, 490.2315pt x 120.45pt>
 File: demo.jpg Graphic file (type jpg)
 <use demo.jpg>
-Package pdftex.def Info: demo.jpg  used on input line 203.
+Package pdftex.def Info: demo.jpg  used on input line 202.
 (pdftex.def)             Requested size: 832.56203pt x 204.57848pt.
 (main.bbl)
 File: logofin.png Graphic file (type png)
 <use logofin.png>
-Package pdftex.def Info: logofin.png  used on input line 203.
+Package pdftex.def Info: logofin.png  used on input line 202.
 (pdftex.def)             Requested size: 693.7814pt x 289.59453pt.
 
 Overfull \hbox (29.02132pt too wide) has occurred while \output is active
@@ -1219,11 +1219,11 @@ Overfull \hbox (88.20334pt too wide) has occurred while \output is active
 \tf@snm=\write8
 \openout8 = `main.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 205.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 205.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 204.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 204.
  (main.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 205.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 205.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 204.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 204.
 Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
 
@@ -1233,23 +1233,24 @@ LaTeX Font Warning: Size substitutions with differences
 
  ) 
 Here is how much of TeX's memory you used:
- 23100 strings out of 480763
- 450437 string characters out of 2904056
- 736740 words of memory out of 3000000
- 38523 multiletter control sequences out of 15000+200000
- 617724 words of font info for 104 fonts, out of 3000000 for 9000
+ 23150 strings out of 480763
+ 452085 string characters out of 2904056
+ 739739 words of memory out of 3000000
+ 38568 multiletter control sequences out of 15000+200000
+ 625001 words of font info for 106 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  60i,18n,78p,773b,1252s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-mathsy.enc}{C:/Program Fil
-es/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ec.enc}{C:/Program Files/MiKTeX 2.9/fonts/e
+{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ec.enc}{C:/Program Files/M
+iKTeX 2.9/fonts/enc/dvips/lm/lm-mathsy.enc}{C:/Program Files/MiKTeX 2.9/fonts/e
 nc/dvips/lm/lm-rm.enc}<C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmbx12
 .pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmr17.pfb><C:/Program F
-iles/MiKTeX 2.9/fonts/type1/public/lm/lmss17.pfb><C:/Program Files/MiKTeX 2.9/f
-onts/type1/public/lm/lmssbx10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publ
-ic/lm/lmsy10.pfb>
-Output written on main.pdf (1 page, 999818 bytes).
+iles/MiKTeX 2.9/fonts/type1/public/lm/lmri12.pfb><C:/Program Files/MiKTeX 2.9/f
+onts/type1/public/lm/lmss17.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public
+/lm/lmssbx10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmsy10.pfb>
+
+Output written on main.pdf (1 page, 1023766 bytes).
 PDF statistics:
- 57 PDF objects out of 1000 (max. 8388607)
- 3 named destinations out of 1000 (max. 500000)
+ 67 PDF objects out of 1000 (max. 8388607)
+ 7 named destinations out of 1000 (max. 500000)
  84 words of extra memory for PDF output out of 10000 (max. 10000000)
 
